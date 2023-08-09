@@ -1,0 +1,11 @@
+{
+  "realm": "gen4",
+  "auth-server-url": "https://siska.prosigmaka.com/auth",
+  "ssl-required": "external",
+  "resource": "gen4-client",
+  "credential":{
+    "secret": "f4436a12-b9ec-462b-a0e1-00035f47e81e"
+  },
+  "use-resource-role-mappings": true,
+  "berarer-only": true
+}
