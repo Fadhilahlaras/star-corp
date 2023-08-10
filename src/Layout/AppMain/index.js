@@ -10,10 +10,10 @@ const Home = lazy(()=> import('../../DemoPages/Homepage'));
 
 const About = lazy(()=> import('../../DemoPages/AboutUs'));
 const Activities = lazy(()=> import('../../DemoPages/Activities'));
-const Team = lazy(()=> import('../../DemoPages/AboutUs/Team'));
+// const Team = lazy(()=> import('../../DemoPages/AboutUs/Team'));
 
-const TableMember = lazy(()=> import('../../DemoPages/AboutUs/Team/Table'));
-const Galeri = lazy(()=> import('../../DemoPages/AboutUs/Galeri'));
+// const TableMember = lazy(()=> import('../../DemoPages/AboutUs/Team/Table'));
+// const Galeri = lazy(()=> import('../../DemoPages/AboutUs/Galeri'));
 const Login = lazy(()=> import('../../DemoPages/UserPages/Login'));
 const Register = lazy(()=> import('../../DemoPages/UserPages/Register'));
 const Profile = lazy(()=> import('../../DemoPages/UserPages/Profile'));
@@ -86,7 +86,7 @@ const AppMain = () => {
 
             {/* Team Member */}
 
-            <Suspense fallback={
+            {/* <Suspense fallback={
                 <div className="loader-container">
                     <div className="loader-container-inner">
                         <div className="text-center">
@@ -100,11 +100,11 @@ const AppMain = () => {
                 </div>
             }>
                 <Route path="/team" component={Team}/>
-            </Suspense>
+            </Suspense> */}
 
             {/* Table Member */}
 
-            <Suspense fallback={
+            {/* <Suspense fallback={
                 <div className="loader-container">
                     <div className="loader-container-inner">
                         <div className="text-center">
@@ -118,11 +118,11 @@ const AppMain = () => {
                 </div>
             }>
                 <Route path="/tableMember" component={TableMember}/>
-            </Suspense>
+            </Suspense> */}
 
             {/* Galeri */}
 
-            <Suspense fallback={
+            {/* <Suspense fallback={
                 <div className="loader-container">
                     <div className="loader-container-inner">
                         <div className="text-center">
@@ -136,7 +136,7 @@ const AppMain = () => {
                 </div>
             }>
                 <Route path="/galeri" component={Galeri}/>
-            </Suspense>
+            </Suspense> */}
 
 
             {/* Login */}

@@ -13,18 +13,6 @@ import AppHeader from "../../Layout/AppHeader";
 import AppFooter from "../../Layout/AppFooter";
 import {Link} from "react-router-dom";
 
-import bg1 from "../../assets/utils/images/dropdown-header/abstract1.jpg";
-import bg2 from "../../assets/utils/images/dropdown-header/abstract2.jpg";
-import bg3 from "../../assets/utils/images/dropdown-header/abstract6.jpg";
-import bg4 from "../../assets/utils/images/dropdown-header/abstract5.jpg";
-
-import pro1 from "../../assets/utils/images/prodemy/prodemy4_1.jpg";
-import pro2 from "../../assets/utils/images/prodemy/prodemy4_7.jpg";
-import pro3 from "../../assets/utils/images/prodemy/prodemy4_12.jpg";
-
-
-import ModalAja from "./Visi";
-import ModalAja1 from "./Misi";
 
 export default class AboutUs extends Component {
 
@@ -141,10 +129,6 @@ export default class AboutUs extends Component {
 
                     </div>
 
-
-
-                    <ModalAja toggle={this.toggle} modal={this.state.modal} />
-                    <ModalAja1 toggle={this.toggle1} modal={this.state.modal1} />
                 </CSSTransitionGroup>
             </Fragment>
         );
