@@ -46,18 +46,19 @@ class MegaMenu extends React.Component {
                 <Nav className="header-megamenu">
                     <UncontrolledDropdown nav inNavbar>
                         <DropdownToggle nav>
-                            <i className="nav-link-icon pe-7s-gift"> </i>
+                            {/* <i className="nav-link-icon pe-7s-gift"> </i> */}
                             <Link to="/about" style={{textDecoration:"none"}}>About Us</Link>
                             {/*<FontAwesomeIcon className="ml-2 opacity-5" icon={faAngleDown}/>*/}
                         </DropdownToggle>
                     </UncontrolledDropdown>
                     <UncontrolledDropdown nav inNavbar>
                         <DropdownToggle nav>
-                            <i className="nav-link-icon pe-7s-gift"> </i>
-                            Products
-                            <FontAwesomeIcon className="ml-2 opacity-5" icon={faAngleDown}/>
+                            {/* <i className="nav-link-icon pe-7s-gift"> </i> */}
+                            {/* Products
+                            <FontAwesomeIcon className="ml-2 opacity-5" icon={faAngleDown}/> */}
+                            <Link to="/about" style={{textDecoration:"none"}}>Product</Link>
                         </DropdownToggle>
-                        <DropdownMenu className="dropdown-menu-rounded dropdown-menu-lg rm-pointers">
+                        {/* <DropdownMenu className="dropdown-menu-rounded dropdown-menu-lg rm-pointers">
                             <div className="dropdown-menu-header">
                                 <div className="dropdown-menu-header-inner bg-success">
                                     <div className="menu-header-image opacity-2"
@@ -84,15 +85,9 @@ class MegaMenu extends React.Component {
                                 <Link to="/product/body-care" style={{textDecoration:"none"}}>Body Care</Link>
                             </DropdownItem>
 
-                        </DropdownMenu>
+                        </DropdownMenu> */}
                     </UncontrolledDropdown>
-                    <UncontrolledDropdown nav inNavbar>
-                        <DropdownToggle nav>
-                            <i className="nav-link-icon pe-7s-gift"> </i>
-                            <Link to="/activities" style={{textDecoration:"none"}}>Activities</Link>
-                            {/*<FontAwesomeIcon className="ml-2 opacity-5" icon={faAngleDown}/>*/}
-                        </DropdownToggle>
-                    </UncontrolledDropdown>
+
 
                     {/*<NavItem>*/}
                     {/*    <NavLink href="#" onClick={this.toggle} id="PopoverMegaMenu">*/}
