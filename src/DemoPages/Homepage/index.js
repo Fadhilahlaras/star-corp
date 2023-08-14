@@ -7,11 +7,12 @@ import AppFooter from "../../Layout/AppFooter";
 import {Row, Col, CardBody, CardTitle} from "reactstrap";
 
 import Carousel from "./Carousel/index";
-import bg1 from "../../assets/utils/images/originals/city.jpg";
+import bg1 from "../../assets/utils/images/originals/abstract5.jpg";
 
 import axios from "axios";
 import ThisCard from "../../DemoPages/Product/Home/index";
 import Kartu from "../Product/Kartu"
+import { faItalic } from "@fortawesome/free-solid-svg-icons";
 
 const Homepage = () => {
 
@@ -45,29 +46,29 @@ const Homepage = () => {
                                     {/*<Card className="main-card mb-5">*/}
                                         <CardBody>
                                             <div
-                                                className="p-5 bg-plum-plate">
+                                                className="p-5 bg-secondary">
                                                 <div className="slide-img-bg"
                                                      style={{
                                                          fade: true,
-                                                         backgroundImage: 'url(' + bg1 + ')'
+                                                        //  backgroundImage: 'url(' + bg1 + ')'
                                                      }}/>
                                                 <div className="slider-content" style={{
                                                     color: "white"
                                                 }}>
-                                                    <h3>Daily You</h3>
+                                                    <h2>Star Surabaya Corp</h2>
                                                     <p>
-                                                        Daily You is like a dream. Some think it's too good to be true! .
+                                                        is <span className="text" style={{ fontSize: 23, fontFamily: "cursive", fontStyle: "italic", fontWeight: "bold"}}> Best Choice </span> for your <span className="text" style={{ fontSize: 23, fontFamily: "cursive", fontStyle: "italic", fontWeight: "bold"}}>Digital Printing Partner</span>
                                                     </p>
                                                 </div>
                                             </div>
                                         </CardBody>
                                 {/*</Col>*/}
                             </Row>
-                            <Row>
+                            {/* <Row>
                                 <CardBody>
                                     <Carousel/>
                                 </CardBody>
-                            </Row>
+                            </Row> */}
 
                             <Row>
                                 <h3 style={{margin: "auto", marginBottom:"20px"}}> All Products </h3>
