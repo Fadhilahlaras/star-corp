@@ -4,28 +4,28 @@ import {
     UncontrolledCarousel
 } from 'reactstrap';
 
- import image1 from '../../../assets/utils/images/product/makeup.jpeg';
- import image2 from '../../../assets/utils/images/product/skincare2.jpg';
- import image3 from '../../../assets/utils/images/product/bodycare2.jpg';
+ import image1 from '../../../assets/utils/images/product/starComp.jpg';
+ import image2 from '../../../assets/utils/images/product/starDesign.jpg';
+ import image3 from '../../../assets/utils/images/product/starPrinting.jpg';
  
 const items = [
     {
         id: 1,
         src: image1,
-        altText: 'Make Up',
-        caption: 'Make Up'
+        altText: 'Star Comp',
+        caption: 'Star Comp'
     },
     {
         id: 2,
         src: image2,
-        altText: 'Skin Care',
-        caption: 'Skin Care'
+        altText: 'Star Design',
+        caption: 'Star Design'
     },
     {
         id: 3,
         src: image3,
-        altText: 'Body Care',
-        caption: 'Body Care'
+        altText: 'Star Printing',
+        caption: 'Star Printing',
     }
 ];
 

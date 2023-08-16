@@ -20,13 +20,13 @@ const Homepage = () => {
     const [dataCard, setDataCard] = useState([])
     let imageArrayPath = [];
 
-    useEffect(() => {
-        axios.get("http://localhost:2222/api/product").then(res => {
-            setDataCard(res.data)
+    // useEffect(() => {
+    //     axios.get("http://localhost:2222/api/product").then(res => {
+    //         setDataCard(res.data)
 
-            console.log(res.data)
-        })
-    }, [])
+    //         console.log(res.data)
+    //     })
+    // }, [])
 
     return(
         <Fragment>
@@ -64,22 +64,24 @@ const Homepage = () => {
                                         </CardBody>
                                 {/*</Col>*/}
                             </Row>
-                            {/* <Row>
+                            <Row>
                                 <CardBody>
                                     <Carousel/>
                                 </CardBody>
-                            </Row> */}
+                            </Row>
 
                             <Row>
                                 <h3 style={{margin: "auto", marginBottom:"20px"}}> All Products </h3>
                             </Row>
                             <Row>
-                                {dataCard.map((card, index) => (
+                                {/* {dataCard.map((card, index) => (
                                     <Kartu key={index} id={card.id} title={card.productName}
                                            category={card.categoryName}
                                            stock={card.stock} price={card.price}
                                            image={imageArrayPath[index]}/>
-                                ))}
+                                ))} */}
+
+
 
                             </Row>
                                     {/*</Card>*/}
