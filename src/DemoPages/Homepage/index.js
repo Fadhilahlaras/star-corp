@@ -14,18 +14,30 @@ import ThisCard from "../../DemoPages/Product/Home/index";
 import Kartu from "../Product/Kartu"
 import { faItalic } from "@fortawesome/free-solid-svg-icons";
 
+
+import pokemon1 from '../../assets/utils/images/product/kaos/pokemon1.jpeg';
+import pokemon2 from '../../assets/utils/images/product/kaos/pokemon2.jpeg';
+
+
 const Homepage = () => {
 
     console.log("udah ada")
-    const [dataCard, setDataCard] = useState([])
-    let imageArrayPath = [];
+    // const [dataCard, setDataCard] = useState([])
+    // let imageArrayPath = [];
+
+    const images = [
+        pokemon1, 
+        // pokemon2,
+    ]
 
     // useEffect(() => {
-    //     axios.get("http://localhost:2222/api/product").then(res => {
-    //         setDataCard(res.data)
+        // axios.get("http://localhost:2222/api/product").then(res => {
+        //     setDataCard(res.data)
 
-    //         console.log(res.data)
-    //     })
+        //     console.log(res.data)
+        // })
+    //     setDataCard(photo)
+
     // }, [])
 
     return(
@@ -80,11 +92,9 @@ const Homepage = () => {
                                            stock={card.stock} price={card.price}
                                            image={imageArrayPath[index]}/>
                                 ))} */}
-
-
-
+                                    <Kartu images={images} />
                             </Row>
-                                    {/*</Card>*/}
+                                    {/* </Card> */}
                         </div>
 
                     <AppFooter/>
