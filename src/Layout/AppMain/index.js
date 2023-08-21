@@ -22,8 +22,8 @@ const Tabel = lazy(()=> import('../../DemoPages/TableData'));
 const Product = lazy(() => import('../../DemoPages/Product/Redirect'));
 
 
-const Cart = lazy(()=> import('../../DemoPages/Cart'));
-const Checkout = lazy(()=> import('../../DemoPages/Checkout'));
+// const Cart = lazy(()=> import('../../DemoPages/Cart'));
+// const Checkout = lazy(()=> import('../../DemoPages/Checkout'));
 
 const AppMain = () => {
 
@@ -198,7 +198,7 @@ const AppMain = () => {
 
             {/* Cart */}
 
-            <Suspense fallback={
+            {/* <Suspense fallback={
                 <div className="loader-container">
                     <div className="loader-container-inner">
                         <div className="text-center">
@@ -212,11 +212,11 @@ const AppMain = () => {
                 </div>
             }>
                 <Route path="/cart" component={Cart}/>
-            </Suspense>
+            </Suspense> */}
 
             {/* Checkout */}
 
-            <Suspense fallback={
+            {/* <Suspense fallback={
                 <div className="loader-container">
                     <div className="loader-container-inner">
                         <div className="text-center">
@@ -230,7 +230,7 @@ const AppMain = () => {
                 </div>
             }>
                 <Route path="/checkout" component={Checkout}/>
-            </Suspense>
+            </Suspense> */}
 
 
             {/*Products*/}
