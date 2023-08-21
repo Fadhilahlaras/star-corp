@@ -90,7 +90,7 @@ class HeaderDots extends React.Component {
             <Fragment>
                 <div className="header-dots">
 
-                    <UncontrolledDropdown>
+                    {/* <UncontrolledDropdown>
                         <DropdownToggle className="p-0 mr-2" color="link">
                             <div className="icon-wrapper icon-wrapper-alt rounded-circle">
                                 <div className="icon-wrapper-bg bg-danger"/>
@@ -123,17 +123,17 @@ class HeaderDots extends React.Component {
                                 </NavItem>
                             </Nav>
                         </DropdownMenu>
-                    </UncontrolledDropdown>
+                    </UncontrolledDropdown> */}
 
-                    <UncontrolledDropdown>
-                        <Link to="/cart" style={{textDecoration:"none"}}>
+                    {/* <UncontrolledDropdown> */}
+                        {/* <Link to="/cart" style={{textDecoration:"none"}}>
                         <DropdownToggle className="p-0" color="link">
                             <div className="icon-wrapper icon-wrapper-alt rounded-circle">
                                 <div className="icon-wrapper-bg bg-success"/>
                                 <IoIosCart color="#3ac47d" fontSize="23px" />
                             </div>
                         </DropdownToggle>
-                        </Link>
+                        </Link> */}
                         {/*<DropdownMenu right className="dropdown-mega-menu rm-pointers">*/}
                         {/*    <div className="dropdown-menu-header">*/}
                         {/*        <div className="dropdown-menu-header-inner bg-premium-dark">*/}
@@ -162,7 +162,7 @@ class HeaderDots extends React.Component {
                         {/*        /!*</div>*!/*/}
                         {/*    </div>*/}
                         {/*</DropdownMenu>*/}
-                    </UncontrolledDropdown>
+                    {/* </UncontrolledDropdown> */}
                 </div>
             </Fragment>
         )

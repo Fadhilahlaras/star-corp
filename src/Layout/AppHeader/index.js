@@ -9,10 +9,10 @@ import HeaderLogo from '../AppLogo';
 
 import SearchBox from './Components/SearchBox';
 import MegaMenu from './Components/MegaMenu';
-import UserBox from './Components/UserBox';
-import HeaderRightDrawer from "./Components/HeaderRightDrawer";
+// import UserBox from './Components/UserBox';
+// import HeaderRightDrawer from "./Components/HeaderRightDrawer";
 
-import HeaderDots from "./Components/HeaderDots";
+// import HeaderDots from "./Components/HeaderDots";
 
 class Header extends React.Component {
     render() {
@@ -48,8 +48,8 @@ class Header extends React.Component {
                         <div className="app-header-right">
 
                             <SearchBox/>
-                            <HeaderDots/>
-                            <UserBox/>
+                            {/* <HeaderDots/>
+                            <UserBox/> */}
                         </div>
                     </div>
                 </CSSTransitionGroup>
