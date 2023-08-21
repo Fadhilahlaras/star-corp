@@ -12,6 +12,7 @@ import {
     setEnableMobileMenuSmall,
 } from '../../reducers/ThemeOptions';
 import {Link} from "react-router-dom";
+import { Col } from 'reactstrap';
 
 class HeaderLogo extends React.Component {
     constructor(props) {
@@ -55,9 +56,15 @@ class HeaderLogo extends React.Component {
                         {/*</div>*/}
                 {/*    </div>*/}
                 {/*</div>*/}
-                <div>
-                    <Link to={"/home"}>
-                    <img style={{paddingLeft:"40px"}} src={logo} sizes={1} route="/home"/>
+                <div style={{ display: 'grid', gridTemplateColumns: 'auto 1fr', alignItems: 'center', gap: '10px' }}>
+                    <Link to={"/home"} style={{ display: 'flex', gridTemplateColumns: 'auto 1fr', alignItems: 'center', textDecoration: 'none' }}>
+                        {/* <Col> */}
+                            {/* <img style={{paddingLeft:"40px"}} src={logo} sizes={1} route="/home" alt="Logo" /> */}
+                            {/* Star Surabaya Corp */}
+                        {/* </Col> */}
+                        {/* <Col> */}
+                            <h6 style={{ marginTop: '5px', marginLeft: '20px', fontFamily: "cursive", fontStyle: "italic", fontSize: "20px" }}>Star Surabaya Corp</h6>
+                        {/* </Col> */}
                     </Link>
                 </div>
                 <AppMobileMenu/>
