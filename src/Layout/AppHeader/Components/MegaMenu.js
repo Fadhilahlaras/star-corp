@@ -54,11 +54,10 @@ class MegaMenu extends React.Component {
                     <UncontrolledDropdown nav inNavbar>
                         <DropdownToggle nav>
                             {/* <i className="nav-link-icon pe-7s-gift"> </i> */}
-                            {/* Products
-                            <FontAwesomeIcon className="ml-2 opacity-5" icon={faAngleDown}/> */}
-                            <Link to="/about" style={{textDecoration:"none"}}>Product</Link>
+                            Products
+                            <FontAwesomeIcon className="ml-2 opacity-5" icon={faAngleDown}/>
                         </DropdownToggle>
-                        {/* <DropdownMenu className="dropdown-menu-rounded dropdown-menu-lg rm-pointers">
+                        <DropdownMenu className="dropdown-menu-rounded dropdown-menu-lg rm-pointers">
                             <div className="dropdown-menu-header">
                                 <div className="dropdown-menu-header-inner bg-success">
                                     <div className="menu-header-image opacity-2"
@@ -67,25 +66,25 @@ class MegaMenu extends React.Component {
                                          }}
                                     ></div>
                                     <div className="menu-header-content text-left">
-                                        <h5 className="menu-header-title">Products Daily You</h5>
+                                        <h5 className="menu-header-title">Products Star Surabaya Corp</h5>
 
                                     </div>
                                 </div>
                             </div>
                             <DropdownItem>
                                 <i className="dropdown-icon pe-7s-check"> </i>
-                                <Link to="/product/make-up" style={{textDecoration:"none"}}>Make Up</Link>
+                                <Link to="/product/star-comp" style={{textDecoration:"none"}}>Star Comp</Link>
                             </DropdownItem>
                             <DropdownItem>
                                 <i className="dropdown-icon pe-7s-check"> </i>
-                                <Link to="/product/skin-care" style={{textDecoration:"none"}}>Skin Care</Link>
+                                <Link to="/product/star-design" style={{textDecoration:"none"}}>Star Design</Link>
                             </DropdownItem>
                             <DropdownItem>
                                 <i className="dropdown-icon pe-7s-check"> </i>
-                                <Link to="/product/body-care" style={{textDecoration:"none"}}>Body Care</Link>
+                                <Link to="/product/star-printing" style={{textDecoration:"none"}}>Star Printing</Link>
                             </DropdownItem>
 
-                        </DropdownMenu> */}
+                        </DropdownMenu>
                     </UncontrolledDropdown>
 
 
