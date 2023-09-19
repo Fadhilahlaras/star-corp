@@ -9,17 +9,23 @@ import axios from "axios";
 // var Id = props.id;
 
 
-const ThisCard = ({images}) => {
-    // const [img, setImg] = useState("")
+const ThisCard = ({props}) => {
+    const [img, setImg] = useState("")
     const [addToCartModal, setAddToCartModal] = useState("")
 
+    // const { id, title, category, stock, price, image } = props;
+    // console.log(this.props.id);
 
-    // useEffect(() => {
-    //         // axios.get('http://localhost:2222/api/product/getImage/' + props.id).then(res => {
-    //             setImg(product1)
-    //         // })
-    //     }, []
-    // )
+
+
+    useEffect(() => {
+            console.log("call axios");
+            axios.get('http://localhost:2222/api/product/getImage/' + 1).then(res => {
+                setImg(res.data)
+                console.log(res.data)
+            })
+        }, []
+    )
 
     // const images = [
     //     pokemon1, 
@@ -67,7 +73,7 @@ const ThisCard = ({images}) => {
         <Fragment>
             <Col sm="3">
                 <Card className="main-card mb-3">
-                    {images.map((image, index) => (
+                    {/* {images.map((image, index) => (
                         <CardImg top width="100%"
                                 key={index}
                                 src={image}
@@ -75,18 +81,25 @@ const ThisCard = ({images}) => {
                                 style={{backgroundSize: "cover", height: "300px", display: 'flex'}} 
                                 className="mt-3"
                         />
-                    ))}
+                    ))} */}
+
+                    
+                    <CardImg top width="100%"
+                             src={"data:image/*;base64," + img}
+                            //  alt={id} 
+                             style={{backgroundSize: "cover", height: "300px"}} className="mt-3"/>
+
               
 
-                    <CardBody>
-                        {/* <CardTitle>{props.title}</CardTitle> */}
-                        <CardSubtitle>{images.category}
-                            <br/> Stock: {images.stock}
+                    {/* <CardBody>
+                        <CardTitle>{props.title}</CardTitle>
+                        <CardSubtitle>{props.category}
+                            <br/> Stock: {props.stock}
                         </CardSubtitle>
                         <CardText>
-                            <strong>Rp.{images.price}</strong>
+                            <strong>Rp.{props.price}</strong>
                         </CardText>
-                    </CardBody>
+                    </CardBody> */}
                     <CardFooter>
                         <Button style={{margin:"auto"}}color="warning" type="button" onClick={()=>toggleAddToCart()}>Add to Cart</Button>
                     </CardFooter>
